@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>综合测评系统</title>
+    <link rel="icon" href="http://47.93.231.115/cqes/prizeFiles/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://47.93.231.115/cqes/prizeFiles/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<form action="http://47.93.231.115/cqes/login" method="post">
+    登录
+    stu<input name="stuId">
+    pwd<input name="pwd" type="password">
+    <input type="submit">
+</form>
+
+<form action="http://47.93.231.115/cqes/stuInfo/" method="get">
+    getStuInfo
+    stu<input name="stuId">
+    <input type="submit">
+</form>
+
+<a href="http://47.93.231.115/cqes/stuList/">getStuInfoList(无参数)</a>
+
+<form action="http://47.93.231.115/cqes/stuPrizes/" method="get">
+    getStuPrizes
+    stu<input name="stuId">
+    <input type="submit">
+</form>
+
+<form action="http://47.93.231.115/cqes/classStu/" method="get">
+    getClassStuInfos
+    classNum<input name="classNum">
+    <input type="submit">
+</form>
+<form action="http://47.93.231.115/cqes/loginLog/" method="get">
+    getStuLoginLog
+    stuId<input name="stuId">
+    <input type="submit">
+</form>
+
+<a href="http://47.93.231.115/cqes/classes/">getClassList(无参数)</a>
+
+<form action="http://47.93.231.115/cqes/status/" method="post">
+    奖项审核(通过的奖项不允许再修改)
+    prizeID<input name="prizeId" >
+    status<input name="status">
+    <input type="submit">
+</form>
+<form action="http://47.93.231.115/cqes/delPrize/" method="post">
+    奖项删除
+    prizeID<input name="prizeId">
+    <input type="submit">
+</form>
+
+
+<form action="http://47.93.231.115/cqes/upload/" method="post" enctype="multipart/form-data">
+    奖项上传
+    prizeInfo<input name="prizeInfo">
+    file<input type="file" name="file"/>
+    <input type="submit" value="上 传"/>
+</form>
+
+<form action="http://47.93.231.115/cqes/update/" method="post" enctype="multipart/form-data">
+    奖项修改
+    prizeInfo<input name="prizeInfo">
+    file<input type="file" name="file"/>
+    <input type="submit" value="上 传"/>
+</form>
+
+<a href="http://47.93.231.115/cqes/logout/">退出</a>
+
+
+</body>
+</html>
